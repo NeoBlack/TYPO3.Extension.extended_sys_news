@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array (
-	'title' => 'Extended Sys News',
+	'title' => 'Extended System News',
 	'description' => 'Display sys_news as flash messages in the BE, useful for release announcements.',
 	'category' => 'be',
 	'version' => '1.0.0',

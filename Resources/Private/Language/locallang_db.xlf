@@ -6,6 +6,24 @@
 			<trans-unit id="tx_extended_sys_news.display_backend" xml:space="preserve">
 				<source>Display this message in backend</source>
 			</trans-unit>
+			<trans-unit id="tx_extended_sys_news.display_backend.0" xml:space="preserve">
+				<source>Not displayed</source>
+			</trans-unit>
+			<trans-unit id="tx_extended_sys_news.display_backend.1" xml:space="preserve">
+				<source>Notice</source>
+			</trans-unit>
+			<trans-unit id="tx_extended_sys_news.display_backend.2" xml:space="preserve">
+				<source>Info</source>
+			</trans-unit>
+			<trans-unit id="tx_extended_sys_news.display_backend.3" xml:space="preserve">
+				<source>Success</source>
+			</trans-unit>
+			<trans-unit id="tx_extended_sys_news.display_backend.4" xml:space="preserve">
+				<source>Warning</source>
+			</trans-unit>
+			<trans-unit id="tx_extended_sys_news.display_backend.5" xml:space="preserve">
+				<source>Error</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

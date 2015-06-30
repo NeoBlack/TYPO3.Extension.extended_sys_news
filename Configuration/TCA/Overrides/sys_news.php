@@ -14,12 +14,12 @@ $newSysNewsColumns = array(
 		'config' => array(
 			'type' => 'select',
 			'items' => array(
-				array('Not displayed', '0'),
-				array('NOTICE', '1'),
-				array('INFO', '2'),
-				array('OK', '3'),
-				array('WARNING', '4'),
-				array('ERROR', '5'),
+				array($ll . 'tx_extended_sys_news.display_backend.0', '0'),
+				array($ll . 'tx_extended_sys_news.display_backend.1', '1'),
+				array($ll . 'tx_extended_sys_news.display_backend.2', '2'),
+				array($ll . 'tx_extended_sys_news.display_backend.3', '3'),
+				array($ll . 'tx_extended_sys_news.display_backend.4', '4'),
+				array($ll . 'tx_extended_sys_news.display_backend.5', '5'),
 			),
 			'default' => 0
 		)

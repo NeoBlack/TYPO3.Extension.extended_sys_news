@@ -4,7 +4,6 @@
 	"description": "Display sys_news as flash messages in the BE, useful for release announcements.",
 	"homepage": "https://github.com/NeoBlack/ExtendedSysNews",
 	"license": ["GPL-2.0+"],
-	"version": "1.0.0",
 	"require": {
 		"typo3/cms-core": ">=6.2.*,<8.0"
 	},

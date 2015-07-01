@@ -22,7 +22,10 @@ Requirements
 
 Installation & Configuration
 ----------------------------
-The extension just needs to be installed as any other extension.
+The extension just needs to be installed as any other extension:
+
+* Install it from TER_
+* Install it by download the ZIP_ or TAR_
 
 
 Message types
@@ -35,3 +38,7 @@ You can choose one of five message types:
 * Success
 * Warning
 * Error
+
+.. _TER: http://typo3.org/extensions/repository/view/extended_sys_news
+.. _ZIP: https://github.com/NeoBlack/ExtendedSysNews/archive/v1.0.0.zip
+.. _TAR: https://github.com/NeoBlack/ExtendedSysNews/archive/v1.0.0.tar.gz

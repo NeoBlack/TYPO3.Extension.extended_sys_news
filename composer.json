@@ -1,23 +1,38 @@
 {
-	"name": "neoblack/extended-sys-news",
-	"type": "typo3-cms-extension",
-	"description": "Display sys_news as flash messages in the BE, useful for release announcements.",
-	"homepage": "https://github.com/NeoBlack/ExtendedSysNews",
-	"license": ["GPL-2.0+"],
-	"require": {
-		"typo3/cms-core": ">=6.2.*,<8.0"
-	},
-	"autoload": {
-        "psr-4": {
-            "NeoBlack\\ExtendedSysNews\\": "Classes"
-        }
-	},
-	"replace": {
-		"extended_sys_news": "*"
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0.x-dev"
-		}
-	}
+  "name": "neoblack/extended-sys-news",
+  "authors": [
+    {
+      "name": "Frank Naegler",
+      "email": "frank.naegler@typo3.org",
+      "role": "Developer",
+      "homepage": "https://naegler.hamburg"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Display sys_news as flash messages in the BE, useful for release announcements.",
+  "homepage": "https://github.com/NeoBlack/ExtendedSysNews",
+  "license": "GPL-2.0+",
+  "keywords": [
+    "typo3",
+    "sys_news"
+  ],
+  "support": {
+    "issues": "https://github.com/NeoBlack/ExtendedSysNews/issues"
+  },
+  "require": {
+    "typo3/cms-core": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "NeoBlack\\ExtendedSysNews\\": "Classes/"
+    }
+  },
+  "replace": {
+    "extended_sys_news": "*"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
 }

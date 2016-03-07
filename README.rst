@@ -26,6 +26,7 @@ The extension just needs to be installed as any other extension:
 
 * Install it from TER_
 * Install it by download the ZIP_ or TAR_
+* Install it via composer: ``composer require neoblack/extended-sys-news``
 
 
 Message types

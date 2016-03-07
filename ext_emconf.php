@@ -20,11 +20,12 @@ $EM_CONF[$_EXTKEY] = array(
     'createDirs' => null,
     'clearcacheonload' => true,
     'author' => 'Frank Nägler',
-    'author_email' => 'typo3@naegler.net',
+    'author_email' => 'frank.naegler@typo3.org',
     'author_company' => '',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '6.2.3-7.99.99',
+            'typo3' => '6.2.3-8.99.99',
+            'sys_note' => '6.2.3-8.99.99',
         ),
         'conflicts' => array(
         ),

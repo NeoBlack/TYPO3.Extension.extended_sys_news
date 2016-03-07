@@ -9,15 +9,12 @@ Screenshot
 .. figure:: Resources/Public/Documentation/screenshot_72.png
     :alt: Screenshot of the backend with 7.x
 
-.. figure:: Resources/Public/Documentation/screenshot_62.png
-    :alt: Screenshot of the backend with 6.2
-
 .. figure:: Resources/Public/Documentation/sys_news_extended.png
     :alt: New setting for system news
 
 Requirements
 ------------
-- TYPO3 CMS 6.2+
+- TYPO3 CMS 7.0+
 
 
 Installation & Configuration

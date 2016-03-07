@@ -38,5 +38,5 @@ You can choose one of five message types:
 * Error
 
 .. _TER: http://typo3.org/extensions/repository/view/extended_sys_news
-.. _ZIP: https://github.com/NeoBlack/ExtendedSysNews/archive/v1.0.0.zip
-.. _TAR: https://github.com/NeoBlack/ExtendedSysNews/archive/v1.0.0.tar.gz
+.. _ZIP: https://github.com/NeoBlack/ExtendedSysNews/archive/v1.1.0.zip
+.. _TAR: https://github.com/NeoBlack/ExtendedSysNews/archive/v1.1.0.tar.gz

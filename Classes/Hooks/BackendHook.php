@@ -34,6 +34,9 @@ class BackendHook implements TableConfigurationPostProcessingHookInterface
         $records = $this->getDatabaseConnection()
             ->exec_SELECTgetRows('title,content,display_backend', 'sys_news', 'display_backend > 0');
         if ($records !== null) {
+            $flashMessageService = GeneralUtility::makeInstance(
+                'TYPO3\\CMS\\Core\\Messaging\\FlashMessageService'
+            );
             $defaultFlashMessageQueue = $flashMessageService->getMessageQueueByIdentifier();
 
             foreach ($records as $record) {
@@ -44,10 +47,6 @@ class BackendHook implements TableConfigurationPostProcessingHookInterface
                     strip_tags($record['title']),
                     $severity,
                     false
-                );
-
-                $flashMessageService = GeneralUtility::makeInstance(
-                    'TYPO3\\CMS\\Core\\Messaging\\FlashMessageService'
                 );
                 $defaultFlashMessageQueue->enqueue($flashMessage);
             }

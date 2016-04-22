@@ -14,6 +14,7 @@ $newSysNewsColumns = array(
         'label' => $ll.'tx_extended_sys_news.display_backend',
         'config' => array(
             'type' => 'select',
+            'renderType' => 'selectSingle',
             'items' => array(
                 array($ll.'tx_extended_sys_news.display_backend.0', '0'),
                 array($ll.'tx_extended_sys_news.display_backend.1', '1'),

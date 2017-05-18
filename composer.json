@@ -20,7 +20,7 @@
     "issues": "https://github.com/NeoBlack/ExtendedSysNews/issues"
   },
   "require": {
-    "typo3/cms-core": "^7.0"
+    "typo3/cms-core": "^7.6"
   },
   "autoload": {
     "psr-4": {
@@ -29,10 +29,5 @@
   },
   "replace": {
     "extended_sys_news": "*"
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.2.x-dev"
-    }
   }
 }

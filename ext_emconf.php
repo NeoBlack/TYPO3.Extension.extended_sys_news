@@ -10,11 +10,11 @@
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Extended System News',
     'description' => 'Display sys_news as flash messages in the BE, useful for release announcements.',
     'category' => 'be',
-    'version' => '1.1.3',
+    'version' => '8.7.0',
     'state' => 'stable',
     'uploadfolder' => false,
     'createDirs' => null,
@@ -22,13 +22,11 @@ $EM_CONF[$_EXTKEY] = array(
     'author' => 'Frank Nägler',
     'author_email' => 'frank.naegler@typo3.org',
     'author_company' => '',
-    'constraints' => array(
-        'depends' => array(
-            'typo3' => '7.6.0-7.6.99',
-        ),
-        'conflicts' => array(
-        ),
-        'suggests' => array(
-        ),
-    ),
-);
+    'constraints' => [
+        'depends' => [
+            'typo3' => '8.7.0-8.7.99',
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
+];

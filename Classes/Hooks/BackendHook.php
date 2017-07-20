@@ -14,7 +14,9 @@ namespace NeoBlack\ExtendedSysNews\Hooks;
  *
  * The TYPO3 project - inspiring people to share!
  */
+use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\TableConfigurationPostProcessingHookInterface;
+use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 
@@ -31,18 +33,22 @@ class BackendHook implements TableConfigurationPostProcessingHookInterface
      */
     public function processData()
     {
-        $records = $this->getDatabaseConnection()
-            ->exec_SELECTgetRows('title,content,display_backend', 'sys_news', 'display_backend > 0');
-        if ($records !== null) {
-            $flashMessageService = GeneralUtility::makeInstance(
-                'TYPO3\\CMS\\Core\\Messaging\\FlashMessageService'
-            );
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
+            ->getQueryBuilderForTable('sys_news');
+        $records = $queryBuilder
+            ->select('title', 'content', 'display_backend')
+            ->from('sys_news')
+            ->where($queryBuilder->expr()->gt('display_backend', 0))
+            ->execute()
+            ->fetchAll();
+        if (count($records)) {
+            $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
             $defaultFlashMessageQueue = $flashMessageService->getMessageQueueByIdentifier();
 
             foreach ($records as $record) {
                 $severity = $this->getSeverity($record['display_backend']);
                 $flashMessage = GeneralUtility::makeInstance(
-                    'TYPO3\\CMS\\Core\\Messaging\\FlashMessage',
+                    FlashMessage::class,
                     strip_tags($record['content']),
                     strip_tags($record['title']),
                     $severity,
@@ -58,7 +64,7 @@ class BackendHook implements TableConfigurationPostProcessingHookInterface
      *
      * @return int
      */
-    protected function getSeverity($index)
+    protected function getSeverity($index) : int
     {
         $severity = null;
         switch ($index) {
@@ -82,13 +88,5 @@ class BackendHook implements TableConfigurationPostProcessingHookInterface
         }
 
         return $severity;
-    }
-
-    /**
-     * @return \TYPO3\CMS\Core\Database\DatabaseConnection
-     */
-    protected function getDatabaseConnection()
-    {
-        return $GLOBALS['TYPO3_DB'];
     }
 }

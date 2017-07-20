@@ -22,7 +22,7 @@ Installation & Configuration
 The extension just needs to be installed as any other extension:
 
 * Install it from TER_
-* Install it by download the ZIP_ or TAR_  (8.7.0)
+* Install it by download the ZIP or TAR
 * Install it via composer: ``composer require neoblack/extended-sys-news``
 
 
@@ -38,5 +38,3 @@ You can choose one of five message types:
 * Error
 
 .. _TER: http://typo3.org/extensions/repository/view/extended_sys_news
-.. _ZIP: https://github.com/NeoBlack/ExtendedSysNews/archive/v8.7.0.zip
-.. _TAR: https://github.com/NeoBlack/ExtendedSysNews/archive/v8.7.0.tar.gz

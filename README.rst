@@ -1,7 +1,7 @@
 TYPO3 CMS Extension "extended_sys_news"
 =======================================
 This extension add an additional setting for ``sys_news``, which make it possible to render a system news as FlashMessage in backend.
-it is very useful if you plan a release and want your editors keep informend about the upcoming release.
+it is very useful if you plan a release and want your editors keep informed about the upcoming release.
 
 Screenshot
 ----------
@@ -14,7 +14,7 @@ Screenshot
 
 Requirements
 ------------
-- TYPO3 CMS 7.0+
+- TYPO3 CMS 7.2+
 
 
 Installation & Configuration

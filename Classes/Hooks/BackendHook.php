@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace NeoBlack\ExtendedSysNews\Hooks;
 
@@ -31,7 +32,7 @@ class BackendHook implements TableConfigurationPostProcessingHookInterface
      * @throws \InvalidArgumentException
      * @throws \TYPO3\CMS\Core\Exception
      */
-    public function processData()
+    public function processData(): void
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
             ->getQueryBuilderForTable('sys_news');

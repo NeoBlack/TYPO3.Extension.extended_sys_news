@@ -14,7 +14,7 @@ Screenshot
 
 Requirements
 ------------
-- TYPO3 CMS 7.0+
+- TYPO3 CMS 7.2+
 
 
 Installation & Configuration

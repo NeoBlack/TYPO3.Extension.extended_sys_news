@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Extended System News',
     'description' => 'Display sys_news as flash messages in the BE, useful for release announcements.',
     'category' => 'be',
-    'version' => '9.5.0',
+    'version' => '10.0.0-dev',
     'state' => 'stable',
     'uploadfolder' => false,
     'createDirs' => null,
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => '',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0',
+            'typo3' => '10.0.0-10.99.99',
         ],
         'conflicts' => [],
         'suggests' => [],
